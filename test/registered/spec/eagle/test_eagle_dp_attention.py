@@ -54,7 +54,7 @@ class TestEAGLE3EngineDPAttention(CustomTestCase):
             "--moe-dense-tp-size",
             "1",
             "--attention-backend",
-            "triton" if is_in_amd_ci() else "fa3",
+            "triton",
             "--mem-fraction-static",
             "0.75",
             "--cuda-graph-max-bs",
